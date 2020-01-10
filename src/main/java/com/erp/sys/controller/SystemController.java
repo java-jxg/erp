@@ -21,5 +21,57 @@ public class SystemController {
     public String index(){
         return "system/index/index";
     }
+    /**
+     * 跳转到工作台
+     */
+    @RequestMapping("toDeskManager")
+    public String toDeskManager() {
+        return "system/index/deskManager";
+    }
+
+    /**
+     * 跳转到日志管理
+     *
+     */
+    @RequestMapping("toLoginfoManager")
+    public String toLoginfoManager() {
+        return "system/loginfo/loginfoManager";
+    }
+
+    /**
+     * 跳转到公告管理
+     *
+     */
+    @RequestMapping("toNoticeManager")
+    public String toNoticeManager() {
+        return "system/notice/noticeManager";
+    }
+    /**
+     * 跳转到部门管理
+     *
+     */
+    @RequestMapping("toDeptManager")
+    public String toDeptManager() {
+        return "system/dept/deptManager";
+    }
+
+    /**
+     * 跳转到部门管理-left
+     *
+     */
+    @RequestMapping("toDeptLeft")
+    public String toDeptLeft() {
+        return "system/dept/deptLeft";
+    }
+
+
+    /**
+     * 跳转到部门管理--right
+     *
+     */
+    @RequestMapping("toDeptRight")
+    public String toDeptRight() {
+        return "system/dept/deptRight";
+    }
 
 }
