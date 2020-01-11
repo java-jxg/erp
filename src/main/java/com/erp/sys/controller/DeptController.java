@@ -24,7 +24,7 @@ import java.util.*;
 
 /**
  * <p>
- *  部门前端控制器
+ *  菜单前端控制器
  * </p>
  *
  * @author ${author}
@@ -37,7 +37,7 @@ public class DeptController {
     private DeptService deptService;
 
     /**
-     * 部门左侧树加载
+     * 菜单左侧树加载
      */
     @RequestMapping("loadDeptManagerLeftTreeJson")
     public DataGridView loadDeptManagerLeftTreeJson(DeptVo deptVo){
@@ -105,7 +105,7 @@ public class DeptController {
         }
     }
     /**
-     * 查询当前的ID的部门有没有子部门
+     * 查询当前的ID的菜单有没有子菜单
      */
     @RequestMapping("checkDeptHasChildrenNode")
     public Map<String,Object> checkDeptHasChildrenNode(DeptVo deptVo){
